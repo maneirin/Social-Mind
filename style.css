@@ -1,0 +1,739 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #FFF2FF;
+  color: #000;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  padding: 28px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo h2 {
+  font-size: 32px;
+  font-weight: 700;
+
+  background: linear-gradient(90deg, #ff4f4f, #b388ff);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav {
+  display: flex;
+  gap: 32px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #d07bff;
+}
+
+.btn-header {
+  border: none;
+  padding: 15px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+
+  background: linear-gradient(90deg, #ff4f4f, #ff4f4f);
+
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-header:hover {
+  border: none;
+  padding: 15px 28px;
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, #ff4f4f, #ff4f4f);
+
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+
+/* HERO */
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+
+  position: relative;
+
+  background-image: url("./fundo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(255, 242, 255, .55);
+}
+
+.hero-content {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 0 8%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 72px;
+  line-height: 1.1;
+  margin-bottom: 28px;
+  max-width: 650px;
+}
+
+#mente {
+  background: linear-gradient(90deg, #cb52c7, #b388ff);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+#redeS {
+  color: #ff4f4f;
+
+}
+
+#redeS2{
+  color: #ff4f4f;
+}
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.9;
+  max-width: 520px;
+  margin-bottom: 35px;
+}
+
+.btn-main {
+  border: none;
+  padding: 18px 34px;
+  border-radius: 999px;
+  text-decoration: none;
+
+  background: linear-gradient(90deg, #ff4f4f, #ff4f4f);
+
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+.btn-main:hover {
+  border: none;
+  padding: 18px 34px;
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, #ff4f4f, #ff4f4f);
+
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 540px;
+  max-width: 100%;
+}
+
+/* IMPACTOS */
+
+.impactos {
+  padding: 100px 8%;
+}
+
+.impactos h2 {
+  text-align: center;
+  font-size: 46px;
+  margin-bottom: 60px;
+}
+hr{
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;         
+  margin-bottom: 30px; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 5px;
+  background: linear-gradient(90deg, #ffb3fc, #cfb3ff);
+  border-radius: 2px;
+  border: none;
+
+}
+#hr2{
+  margin-top: -15px;         
+  margin-bottom: 15px; 
+  margin-left: 3px;
+  margin-right: auto;
+  width: 14%;
+  height: 5px;
+  background: linear-gradient(90deg, #ffb3fc, #cfb3ff);
+  border-radius: 2px;
+  border: none;
+
+}
+.impactos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.impacto-card {
+  background: white;
+  border: 1px solid #f0ddff;
+
+  border-radius: 30px;
+  padding: 40px 30px;
+
+  text-align: center;
+
+  transition: .3s;
+}
+
+.impacto-card:hover {
+  transform: translateY(-10px);
+}
+
+.impacto-circle {
+  width: 90px;
+  height: 90px;
+
+  margin: auto;
+  margin-bottom: 24px;
+
+  border-radius: 50%;
+
+  background: #FFC2F1;
+  opacity: .5;
+}
+
+.purple {
+  background: #D6C4FF;
+}
+
+.impacto-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.impacto-card p {
+  line-height: 1.8;
+}
+
+/* ALERTA */
+
+.alerta {
+  margin: 0 8%;
+  padding: 50px;
+
+  border-radius: 35px;
+
+  background: #ffe3e7;
+  border: 1px solid #f3dfff;
+
+  display: flex;
+  gap: 50px;
+}
+
+.alerta-left {
+  width: 25%;
+}
+
+.alerta-left h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.alerta-left p {
+  line-height: 1.8;
+}
+
+.alerta-items {
+  width: 75%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.alerta-item {
+  background: white;
+  padding: 24px;
+  border-radius: 20px;
+
+  text-align: center;
+  line-height: 1.6;
+
+  border: 1px solid #f0ddff;
+}
+
+/* INFO CARDS */
+
+.info-cards {
+  padding: 100px 8%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.info-card {
+  background: white;
+
+  border-radius: 35px;
+  border: 1px solid #f0ddff;
+
+  padding: 45px;
+}
+
+.info-card h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.info-card span {
+  color: #ff7b91;
+}
+#autoE{
+  color: #b865d1;
+}
+
+.info-card p {
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+.info-card ul{
+  list-style: none;
+  padding: 0;
+}
+
+.info-card li{
+  position: relative;
+
+  padding-left: 35px;
+  margin-bottom: 16px;
+
+  line-height: 1.7;
+}
+
+.info-card li::before{
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+  top: 2px;
+
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+.info-card.pink li::before{
+  background: #b865d1;
+}
+
+.info-card.purple li::before{
+  background: #ff7b91;
+
+}
+/* QUIZ */
+
+.quiz-section {
+  margin: 0 8%;
+  padding: 60px;
+
+  border-radius: 35px;
+
+  background: #fff8ff;
+  border: 1px solid #f0ddff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quiz-text h2 {
+  font-size: 42px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.quiz-text span {
+  color: #d993fe;
+}
+
+.quiz-text p {
+  max-width: 600px;
+  line-height: 1.9;
+}
+
+.quiz-button button {
+  border: none;
+  padding: 15px 50px;
+  border-radius: 999px;
+  background: #d993fe;
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+}
+.quiz-button:hover button {
+  border: none;
+
+  padding: 15px 50px;
+  border-radius: 999px;
+
+  background: #d993fe;
+
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+
+
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+.quiz-button span{
+  font-size: 30px;
+  font-weight: bold;
+}
+.quiz-button p{
+  padding: 20px;
+}
+/* DICAS */
+
+.dicas {
+  padding: 100px 8%;
+}
+
+.dicas h2 {
+  text-align: center;
+  font-size: 46px;
+  margin-bottom: 60px;
+}
+
+.dicas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.dica-card {
+  background: white;
+
+  border-radius: 28px;
+  border: 1px solid #f0ddff;
+
+  padding: 35px;
+}
+
+.dica-card h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.dica-card p {
+  line-height: 1.8;
+}
+
+/* APOIO */
+
+.apoio {
+  margin: 0 8% 80px;
+
+  padding: 60px;
+
+  border-radius: 35px;
+
+  background: #fff8ff;
+  border: 1px solid #f0ddff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apoio-text {
+  max-width: 650px;
+}
+
+.apoio-text h2 {
+  font-size: 46px;
+  margin-bottom: 20px;
+
+  color: #ff829b;
+}
+
+.apoio-text p {
+  line-height: 1.9;
+}
+
+.apoio-button {
+  text-align: center;
+  text-decoration: none;
+}
+
+.apoio-button button {
+  border: none;
+
+  padding: 18px 34px;
+  border-radius: 999px;
+
+  background: #ff829b;
+
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+
+  margin-bottom: 18px;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+.btn-apoio{
+  text-decoration: none;
+  color: white;
+
+  display: inline-block;
+
+  padding: 18px 34px;
+  border-radius: 999px;
+
+  background:transparent;
+
+  font-weight: 600;
+}
+
+.apoio-button p {
+  line-height: 1.7;
+  
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 60px 8%;
+
+  border-top: 1px solid #efd9ff;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.footer-logo h2 {
+  font-size: 36px;
+
+  background: linear-gradient(90deg, #ff4967, #b388ff);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-links {
+  display: flex;
+  gap: 90px;
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links h4 {
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.footer-links p {
+  line-height: 1.8;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:1200px) {
+
+  .hero-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+
+    padding-top: 150px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    margin: auto;
+    margin-bottom: 25px;
+    font-size: 58px;
+  }
+
+  .hero-text p {
+    margin: auto;
+    margin-bottom: 35px;
+  }
+
+  .impactos-grid,
+  .dicas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .alerta {
+    flex-direction: column;
+  }
+
+  .alerta-left,
+  .alerta-items {
+    width: 100%;
+  }
+
+  .quiz-section,
+  .apoio,
+  .footer {
+    flex-direction: column;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+@media(max-width:700px) {
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .impactos-grid,
+  .dicas-grid,
+  .alerta-items {
+    grid-template-columns: 1fr;
+  }
+
+  .impactos h2,
+  .dicas h2,
+  .quiz-text h2,
+  .apoio-text h2 {
+    font-size: 34px;
+  }
+
+  .header {
+    padding: 25px 5%;
+  }
+
+  .hero-content,
+  .impactos,
+  .info-cards,
+  .dicas {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .alerta,
+  .quiz-section,
+  .apoio {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 35px;
+  }
+
+  .footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

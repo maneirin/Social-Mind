@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+
+  min-height: 100vh;
+
+  background: #FFF2FF;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+}
+
+.quiz-page{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-card{
+  width: 100%;
+  max-width: 900px;
+
+  background: white;
+
+  border-radius: 40px;
+
+  padding: 50px;
+
+  border: 1px solid #f0ddff;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,.04);
+}
+
+.back-btn{
+  text-decoration: none;
+
+  color: #b865d1;
+  font-weight: 600;
+
+  display: inline-block;
+
+  margin-bottom: 25px;
+}
+
+.top-content h1{
+  font-size: 48px;
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+}
+
+.top-content p{
+  line-height: 1.9;
+
+  color: #444;
+
+  margin-bottom: 40px;
+}
+
+.progress-area{
+  margin-bottom: 40px;
+}
+
+.progress-text{
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.progress-bar{
+  width: 100%;
+  height: 12px;
+
+  background: #f5e8ff;
+
+  border-radius: 999px;
+
+  overflow: hidden;
+}
+
+.progress{
+  width: 12.5%;
+  height: 100%;
+
+  background: linear-gradient(90deg,#ff4f4f,#b865d1);
+
+  border-radius: 999px;
+
+  transition: .4s;
+}
+
+.question{
+  display: none;
+}
+
+.question.active{
+  display: block;
+}
+
+.question h2{
+  font-size: 32px;
+  line-height: 1.4;
+
+  margin-bottom: 35px;
+}
+
+.answers{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.answers button{
+  border: none;
+
+  background: #fff2ff;
+
+  padding: 22px;
+
+  border-radius: 22px;
+
+  text-align: left;
+
+  font-size: 16px;
+  font-family: 'Poppins';
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.answers button:hover{
+  background: #ffe3ea;
+
+  transform: translateX(8px);
+}
+
+.result{
+  display: none;
+
+  text-align: left;
+
+  background: #fff7ff;
+
+  padding: 40px;
+
+  border-radius: 30px;
+
+  border: 1px solid #f0ddff;
+}
+
+.result h2{
+  font-size: 40px;
+
+  margin-bottom: 20px;
+}
+
+.result p{
+  line-height: 1.9;
+
+  margin-bottom: 15px;
+}
+
+.result button{
+  border: none;
+
+  margin-top: 15px;
+
+  padding: 16px 28px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(90deg,#ff4f4f,#b865d1);
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+@media(max-width:700px){
+
+  body{
+    padding: 20px;
+  }
+
+  .quiz-card{
+    padding: 30px;
+  }
+
+  .top-content h1{
+    font-size: 34px;
+  }
+
+  .question h2{
+    font-size: 24px;
+  }
+
+}

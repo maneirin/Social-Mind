@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz | Social Mind</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <section class="quiz-page">
+
+        <div class="quiz-card">
+
+            <div class="top-content">
+
+                <a href="index.html" class="back-btn">
+                    ← Voltar
+                </a>
+
+                <h1>
+                    Como as redes sociais estão afetando sua mente?
+                </h1>
+
+                <p>
+                    Responda com sinceridade para descobrir
+                    como seu uso das redes sociais pode estar
+                    impactando sua saúde mental.
+                </p>
+
+            </div>
+
+            <div class="progress-area">
+
+                <div class="progress-text">
+                    Pergunta <span id="currentQuestion">1</span>/8
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
+            </div>
+
+            <div class="question active">
+
+                <h2>
+                    Quanto tempo você passa nas redes sociais por dia?
+                </h2>
+
+                <div class="answers">
+
+                    <button onclick="nextQuestion(1)">
+                        Menos de 1 hora
+                    </button>
+
+                    <button onclick="nextQuestion(2)">
+                        Entre 2h e 4h
+                    </button>
+
+                    <button onclick="nextQuestion(3)">
+                        Mais de 5 horas
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="question">
+
+                <h2>
+                    Você sente ansiedade quando fica longe do celular?
+                </h2>
+
+                <div class="answers">
+
+                    <button onclick="nextQuestion(1)">
+                        Nunca
+                    </button>
+
+                    <button onclick="nextQuestion(2)">
+                        Às vezes
+                    </button>
+
+                    <button onclick="nextQuestion(3)">
+                        Frequentemente
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="question">
+
+                <h2>
+                    Você costuma se comparar com pessoas nas redes sociais?
+                </h2>
+
+                <div class="answers">
+
+                    <button onclick="nextQuestion(1)">
+                        Raramente
+                    </button>
+
+                    <button onclick="nextQuestion(2)">
+                        Algumas vezes
+                    </button>
+
+                    <button onclick="nextQuestion(3)">
+                        O tempo todo
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="question">
+
+                <h2>
+                    Curtidas e comentários afetam seu humor?
+                </h2>
+
+                <div class="answers">
+
+                    <button onclick="nextQuestion(1)">
+                        Não
+                    </button>
+
+                    <button onclick="nextQuestion(2)">
+                        Um pouco
+                    </button>
+
+                    <button onclick="nextQuestion(3)">
+                        Sim, bastante
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="question">
+
+                <h2>
+                    Você perde horas rolando o feed sem perceber?
+                </h2>
+
+                <div class="answers">
+
+                    <button onclick="nextQuestion(1)">
+                        Quase nunca
+                    </button>
+
+                    <button onclick="nextQuestion(2)">
+                        Algumas vezes
+                    </button>
+
+                    <button onclick="nextQuestion(3)">
+                        Quase todos os dias
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="question">
+
+                <h2>
+                    As redes sociais atrapalham seu sono ou concentração?
+                </h2>
+
+                <div class="answers">
+
+                    <button onclick="nextQuestion(1)">
+                        Não
+                    </button>
+
+                    <button onclick="nextQuestion(2)">
+                        Às vezes
+                    </button>
+
+                    <button onclick="nextQuestion(3)">
+                        Sim
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="question">
+
+                <h2>
+                    Você sente necessidade de verificar notificações toda hora?
+                </h2>
+
+                <div class="answers">
+
+                    <button onclick="nextQuestion(1)">
+                        Não muito
+                    </button>
+
+                    <button onclick="nextQuestion(2)">
+                        Algumas vezes
+                    </button>
+
+                    <button onclick="nextQuestion(3)">
+                        Constantemente
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="question">
+
+                <h2>
+                    Você sente que vive mais online do que no mundo real?
+                </h2>
+
+                <div class="answers">
+
+                    <button onclick="finishQuiz(1)">
+                        Não
+                    </button>
+
+                    <button onclick="finishQuiz(2)">
+                        Talvez
+                    </button>
+
+                    <button onclick="finishQuiz(3)">
+                        Sim
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="result" id="result"></div>
+
+        </div>
+
+    </section>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
