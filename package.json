@@ -1,0 +1,27 @@
+{
+  "name": "social-mind",
+  "version": "1.0.0",
+  "description": "Social Mind - Understanding the impact of social media on mental health",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maneirin/Social-Mind.git"
+  },
+  "keywords": [
+    "social-media",
+    "mental-health",
+    "awareness"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maneirin/Social-Mind/issues"
+  },
+  "homepage": "https://github.com/maneirin/Social-Mind#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
