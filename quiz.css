@@ -206,3 +206,38 @@ body{
   }
 
 }
+
+@media(max-width: 768px){
+
+  body{
+    padding: 20px;
+  }
+
+  .quiz-card{
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  .top-content h1{
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .top-content p{
+    font-size: 15px;
+  }
+
+  .question h2{
+    font-size: 24px;
+  }
+
+  .answers button{
+    padding: 18px;
+    font-size: 15px;
+  }
+
+  .result h2{
+    font-size: 30px;
+  }
+
+}
